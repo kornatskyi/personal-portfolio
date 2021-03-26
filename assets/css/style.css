@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body nav {
+  background-color: black;
+  background-image: linear-gradient(to right, white, black);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+body nav > a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+body nav > a:hover {
+  color: #aaaaaa;
+}
+
+body #welcome-section {
+  padding-top: 60px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body #projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px 10px;
+  grid-template-areas: ". . .";
+}
+
+body #projects .project {
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+body #projects .project a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  max-width: 100%;
+  padding: 20px;
+}
+
+body #projects .project a img {
+  max-width: 100%;
+  padding: 20px;
+}
+
+body #projects .project a h2 {
+  color: black;
+}
+
+body #projects .project a:hover h2 {
+  text-decoration: underline;
+  color: grey;
+}
+
+.find-me {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.find-me a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.find-me a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 1300px) {
+  body #projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px 10px;
+    grid-template-areas: ". .";
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body #projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px 10px;
+    grid-template-areas: ".";
+  }
+}
+/*# sourceMappingURL=style.css.map */
